@@ -1,0 +1,160 @@
+[
+	{
+		"key": "group_brewer_block",
+		"title": "Brewer Block - Options",
+		"fields": [
+			{
+				"key": "field_brewer_titre",
+				"label": "Titre de la section",
+				"name": "brewer_titre",
+				"type": "text",
+				"placeholder": "Les Brasseurs"
+			},
+			{
+				"key": "field_brewer_posts_per_page",
+				"label": "Nombre de brasseurs",
+				"name": "brewer_posts_per_page",
+				"type": "number",
+				"default_value": 18,
+				"min": 1,
+				"max": 100
+			}
+		],
+		"location": [
+			[
+				{
+					"param": "block",
+					"operator": "==",
+					"value": "festipiousse/brewer"
+				}
+			]
+		],
+		"menu_order": 0,
+		"position": "normal",
+		"style": "default",
+		"label_placement": "top",
+		"active": true
+	},
+	{
+		"key": "group_58aac83c9815f",
+		"title": "brasseurs",
+		"fields": [
+			{
+				"key": "field_58aac83208b22",
+				"label": "Nom du Brasseur",
+				"name": "nom_du_brasseur",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"default_value": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": "",
+				"maxlength": ""
+			},
+			{
+				"key": "field_58aac8a008b28",
+				"label": "localité",
+				"name": "localite",
+				"aria-label": "",
+				"type": "text",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"default_value": "",
+				"placeholder": "",
+				"prepend": "",
+				"append": "",
+				"maxlength": ""
+			},
+			{
+				"key": "field_58aac86108b25",
+				"label": "logo",
+				"name": "logo",
+				"aria-label": "",
+				"type": "image",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"return_format": "array",
+				"preview_size": "thumbnail",
+				"library": "all",
+				"min_width": "", "min_height": "", "min_size": "",
+				"max_width": "", "max_height": "", "max_size": "",
+				"mime_types": ""
+			},
+			{
+				"key": "field_58aac84a08b24",
+				"label": "petite desc",
+				"name": "petite_desc",
+				"aria-label": "",
+				"type": "textarea",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"default_value": "",
+				"placeholder": "",
+				"maxlength": "",
+				"rows": "",
+				"new_lines": ""
+			},
+			{
+				"key": "field_58aac87b08b26",
+				"label": "grande desc",
+				"name": "grande_desc",
+				"aria-label": "",
+				"type": "wysiwyg",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"default_value": "",
+				"tabs": "all",
+				"toolbar": "full",
+				"media_upload": 1,
+				"delay": 0
+			},
+			{
+				"key": "field_58aac88d08b27",
+				"label": "Url",
+				"name": "url",
+				"aria-label": "",
+				"type": "url",
+				"instructions": "",
+				"required": 0,
+				"conditional_logic": 0,
+				"wrapper": { "width": "", "class": "", "id": "" },
+				"default_value": "",
+				"placeholder": ""
+			}
+		],
+		"location": [
+			[
+				{
+					"param": "post_type",
+					"operator": "==",
+					"value": "brasseur"
+				}
+			]
+		],
+		"menu_order": 0,
+		"position": "normal",
+		"style": "default",
+		"label_placement": "top",
+		"instruction_placement": "label",
+		"hide_on_screen": [
+			"permalink", "the_content", "excerpt", "discussion", "comments",
+			"revisions", "slug", "author", "format", "page_attributes",
+			"featured_image", "categories", "tags", "send-trackbacks"
+		],
+		"active": true,
+		"description": "",
+		"show_in_rest": 0
+	}
+]

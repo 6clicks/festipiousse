@@ -1,0 +1,82 @@
+#header{
+    z-index: -2;
+}
+
+#nav-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.title-festi span {
+    font-weight: 500;
+}
+
+.title-festi {
+    font-weight: 100;
+}
+
+#deco {
+    z-index: 1;
+}
+
+#deco::after{
+    content: "";
+    background-image: url('../img/houblon.svg');
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    min-height: 314px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+
+
+
+.home .entry-content {
+    margin: 0;
+    padding: 0;
+}
+.wp-block-button__link {
+	position: relative;
+	overflow: hidden;
+	transition: color 0.4s ease, transform 0.3s ease, box-shadow 0.2s ease 0.05s;
+	z-index: 0;
+}
+
+.wp-block-button__link:hover {
+	transform: scale(1.05);
+}
+
+.wp-block-button__link:hover {
+	box-shadow: 0 0 0 2px var(--wp--preset--color--blanc);
+}
+
+.btn-bubble {
+	position: absolute;
+	bottom: -10px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.35);
+	pointer-events: none;
+	animation: bubble-rise linear forwards;
+	z-index: 1;
+}
+
+@keyframes bubble-rise {
+	0%   { transform: translateY(0) scale(1); opacity: 0.8; }
+	80%  { opacity: 0.5; }
+	100% { transform: translateY(-220%) scale(0.4); opacity: 0; }
+}
+
+.text-intro {
+    max-width: 320px;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin: auto;
+    min-height: 150px;
+    text-wrap: pretty;
+}

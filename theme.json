@@ -1,0 +1,150 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"slug": "color1",
+					"color": "#3F383A",
+					"name": "Main color"
+				},
+				{
+					"slug": "color2",
+					"color": "#EC700C",
+					"name": "secondary color"
+				},
+				{
+					"slug": "mousse",
+					"color": "#E8D5A3",
+					"name": "Mousse"
+				},
+				{
+					"slug": "houblon",
+					"color": "#4A6741",
+					"name": "Houblon"
+				},
+				{
+					"slug": "nuit",
+					"color": "#1A1208",
+					"name": "Nuit"
+				},
+				{
+					"slug": "blanc",
+					"color": "#FFFFFF",
+					"name": "Blanc"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "titre",
+					"name": "Titre",
+					"fontFamily": "\"Quicksand\", sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Quicksand",
+							"fontWeight": "300 700",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/font/Quicksand-VariableFont_wght.ttf" ]
+						}
+					]
+				},
+				{
+					"slug": "corps",
+					"name": "Corps",
+					"fontFamily": "\"Source Sans 3\", sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Source Sans 3",
+							"fontWeight": "200 900",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/font/SourceSans3-VariableFont_wght.ttf" ]
+						},
+						{
+							"fontFamily": "Source Sans 3",
+							"fontWeight": "200 900",
+							"fontStyle": "italic",
+							"src": [ "file:./assets/font/SourceSans3-Italic-VariableFont_wght.ttf" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "xs",   "size": "0.75rem",  "name": "Très petit" },
+				{ "slug": "sm",   "size": "0.875rem", "name": "Petit" },
+				{ "slug": "md",   "size": "1rem",     "name": "Moyen" },
+				{ "slug": "lg",   "size": "1.25rem",  "name": "Grand" },
+				{ "slug": "xl",   "size": "1.5rem",   "name": "Très grand" },
+				{ "slug": "2xl",  "size": "2rem",     "name": "Titre" },
+				{ "slug": "3xl",  "size": "2.5rem",   "name": "Grand titre" },
+				{ "slug": "4xl",  "size": "3.5rem",   "name": "Héro" }
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--corps)"
+		},
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "11px"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--md)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"background": "var(--wp--preset--color--color-1)",
+							"text": "var(--wp--preset--color--blanc)"
+						},
+						":hover": {
+							"color": {
+								"background": "var(--wp--preset--color--color-2)"
+							}
+						}
+					}
+				},
+				"variations": {
+					"secondaire": {
+						"color": {
+							"background": "var(--wp--preset--color--color-2)",
+							"text": "var(--wp--preset--color--blanc)"
+						}
+					}
+				}
+			}
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--titre)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--titre)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--titre)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--corps)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--corps)"
+				}
+			}
+		}
+	}
+}
